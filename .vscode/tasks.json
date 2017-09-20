@@ -1,0 +1,13 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "taskName": "plsql",
+            "type": "shell",
+            "command": "_run_sqlplus.bat",
+            "args": ["username/password@//hostname:1521/xe", "@\"${file}\""]
+        }
+    ]
+}
